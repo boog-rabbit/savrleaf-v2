@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
+    "dev": "node api.js && nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed:dev": "NODE_ENV=development node scripts/seed.js",
     "seed:prod": "NODE_ENV=production node scripts/seed.js",
-    "start": "nodemon src/index.js",
-    "start:dev": "NODE_ENV=development node src/index.js",
-    "start:prod": "NODE_ENV=production node src/index.js"
+    "start": "node api.js && nodemon src/index.js",
+    "start:dev": "node api.js && NODE_ENV=development node src/index.js",
+    "start:prod": "node api.js && NODE_ENV=production node src/index.js"
   },
   "keywords": [],
   "author": "",
